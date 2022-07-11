@@ -2,12 +2,52 @@
 0, 7, 8, -2, -2 -> 2
 1, -7, 567, 89, 223-> 3
 */
+/*
+int[] Array(int size)
+{
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write("Input number: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+   return array;
+}
 
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();    
+}
+
+int CountOfNumbersMoreZero(int[] array)
+{
+    int quantity = 0; 
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > 0) 
+        {
+            quantity = quantity + 1; 
+        }
+    }
+    return quantity;
+}
+
+
+Console.Write("Input size: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] MyArray = Array(size);
+ShowArray(MyArray);
+CountOfNumbersMoreZero(MyArray);
+Console.WriteLine("Количество чисел больше 0: " + CountOfNumbersMoreZero(MyArray)); 
+*/
 
 /*Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; 5,5)
 */
-
+/*
 double[] crossPoint(double b1, double k1, double b2, double k2)
 {
     double[] array = new double[2];
@@ -36,7 +76,7 @@ Console.Write("Input k2: ");
 int k2 = Convert.ToInt32(Console.ReadLine());
 
 double[] MyArray = crossPoint(b1, k1, b2, k2);
-Console.Write("Crosspoint of two lines: " );
+Console.Write("Crosspoint of two lines: ");
 ShowArray(MyArray);
-
+*/
 
